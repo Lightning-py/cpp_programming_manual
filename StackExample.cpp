@@ -91,7 +91,8 @@ void ForwardList::ForwardListPushFront (int data_to_push) {
         if (this->head == this->tail)
             this->head->next = new_node;
 
-        this->tail = new_node;
+        this->tail->next = new_node;
+        this->tail       = new_node;
 
         this->lenght++;
     }

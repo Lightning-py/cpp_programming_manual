@@ -87,11 +87,10 @@ int List::top () {
 // а теперь перейдем к самой очереди
 
 class Queue {
-    // private:
-    public:
+    private:
     List storage; // хранилище элементов
 
-    // public:
+    public:
     void push_back (int data_to_push); // функция для добавления элементов в конец
     int get_top (); // функция дл получения первого элемента
     void pop_first (); // функция для того чтобы стереть первый элемент

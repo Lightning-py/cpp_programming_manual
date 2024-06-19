@@ -21,7 +21,8 @@ unsigned long long get_hash (std::string s, unsigned int k) { // функция 
     return sum;
 }
 
-unsigned long long moduled_hash (std::string s, unsigned int k, unsigned long long module) {
+unsigned long long
+moduled_hash (std::string s, unsigned int k, unsigned long long module = __UINT64_MAX__) {
     /*
         Для больших строк хеш может быть очень большим, ведь мы используем степени k
 
